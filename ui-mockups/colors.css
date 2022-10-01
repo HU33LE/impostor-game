@@ -1,0 +1,59 @@
+:root {
+    --main-color: #64A6BD;
+    --secondary-color: #3d798f;
+    --light-color: #eadeda;
+    --success-color: #0B4F6C;
+    --success-second-color: #117aa7;
+
+    --text-light-color: #FFF;
+    --text-dark-color: #0d160b;
+}
+
+.custom-bg-main {
+    background-color: var(--main-color);
+}
+
+.custom-bg-second {
+    background-color: var(--secondary-color);
+}
+
+.custom-bg-light {
+    background-color: var(--light-color);
+}
+
+.form-control.custom-focus:focus,
+.form-control.custom-focus:focus + .input-group-text {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px var(--secondary-color);
+    outline: 0 none;
+}
+
+.form-control.custom-focus.with-sibling:focus {
+    border-right: 0;
+}
+
+.form-control.custom-focus:focus + .input-group-text {
+    border-left: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.custom-btn-primary {
+    background-color: var(--success-color);
+    color: var(--text-light-color);
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--success-second-color);
+    color: var(--text-light-color);
+}
+
+.custom-text-dark {
+    color: var(--text-dark-color);
+}
+
+.custom-text-light {
+    color: var(--text-light-color);
+}
