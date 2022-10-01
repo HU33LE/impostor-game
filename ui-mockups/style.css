@@ -1,12 +1,15 @@
 :root {
     --main-color: #64A6BD;
     --secondary-color: #3d798f;
-    --light-color: #eadeda;
+    --light-color: #fafafa;
     --success-color: #0B4F6C;
     --success-second-color: #117aa7;
 
     --text-light-color: #FFF;
     --text-dark-color: #0d160b;
+
+    --light-gray-color: #cFcFcF;
+    --gray-color: #a0a0a0;
 }
 
 .custom-bg-main {
@@ -37,7 +40,7 @@
 }
 
 .full-height {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .custom-btn-primary {
@@ -56,4 +59,18 @@
 
 .custom-text-light {
     color: var(--text-light-color);
+}
+
+.custom-card {
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.custom-card.eliminated {
+    background-color: var(--light-gray-color);
+    border: 0;
+}
+
+.header {
+    z-index: 1030;
 }
