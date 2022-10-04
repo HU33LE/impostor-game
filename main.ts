@@ -1,4 +1,4 @@
-import Player from "./players/player"
+import Player from "./players/player.model"
 import { chooseImpostor } from "./game/impostors"
 
 const players : Player[] = [

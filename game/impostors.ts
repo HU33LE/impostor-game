@@ -1,4 +1,4 @@
-import Player from "../players/player"
+import Player from "../players/player.model"
 
 export function chooseImpostor(players: Player[], totalImpostors : number = 1) : Player[] {
     if (players.length == 0) {
