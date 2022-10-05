@@ -40,7 +40,7 @@
 }
 
 .full-height {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .custom-btn-primary {
@@ -73,4 +73,22 @@
 
 .header {
     z-index: 1030;
+}
+
+.custom-modal {
+    width: 100%;
+    max-width: 100%;
+}
+
+.custom-modal .modal-content {
+    border-radius: 0;
+    height: 70vh;
+}
+
+.custom-modal .modal-footer {
+    border-top: 0;
+}
+
+.selected-topic {
+    font-size: 8rem;
 }
