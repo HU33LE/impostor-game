@@ -46,6 +46,10 @@
     height: 100vh;
 }
 
+.fifth-height {
+    height: 20vh;
+}
+
 .custom-btn-primary {
     background-color: var(--success-color);
     color: var(--text-light-color);
@@ -84,7 +88,7 @@
     border: 0;
 }
 
-.header {
+.header, .footer {
     z-index: 1030;
 }
 
