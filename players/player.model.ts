@@ -2,6 +2,8 @@ export default class Player {
     id: string;
     name: string;
     impostorOportunities: number;
+    votes: number = 0;
+    isEliminated: boolean = false;
 
     constructor(
         id: string,
@@ -18,5 +20,25 @@ export default class Player {
 
     resetOportunities() : void {
         this.impostorOportunities = 0;
+    }
+
+    addVote() : void {
+        this.votes++;
+    }
+
+    resetVotes() : void {
+        this.votes = 0;
+    }
+
+    equals(player : Player) {
+        return player.id == this.id;
+    }
+
+    eliminate() {
+        this.isEliminated = true;
+    }
+
+    incorporate() {
+        this.isEliminated = false;
     }
 }
