@@ -4,6 +4,9 @@
     --light-color: #fafafa;
     --success-color: #0B4F6C;
     --success-second-color: #117aa7;
+    --dark-color: #212529;
+
+    --dark-color-decimal: 33, 37, 41;
 
     --text-light-color: #FFF;
     --text-dark-color: #0d160b;
@@ -53,6 +56,16 @@
     color: var(--text-light-color);
 }
 
+.custom-btn-dark {
+    background-color: var(--dark-color);
+    color: var(--text-light-color);
+}
+
+.custom-btn-dark:hover {
+    background-color: rgba(var(--dark-color-decimal), 0.8);
+    color: var(--text-light-color);
+}
+
 .custom-text-dark {
     color: var(--text-dark-color);
 }
@@ -83,6 +96,7 @@
 .custom-modal .modal-content {
     border-radius: 0;
     height: 70vh;
+    background-color: rgba(var(--dark-color-decimal), 0.8);
 }
 
 .custom-modal .modal-footer {
@@ -91,4 +105,40 @@
 
 .selected-topic {
     font-size: 8rem;
+}
+
+.selected-impostor {
+    font-size: 6rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .selected-topic {
+        font-size: 4rem;
+    }
+
+    .selected-impostor {
+        font-size: 3rem;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .selected-topic {
+        font-size: 5rem;
+    }
+
+    .selected-impostor {
+        font-size: 4rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .selected-topic {
+        font-size: 6rem;
+    }
+
+    .selected-impostor {
+        font-size: 5rem;
+    }
 }
