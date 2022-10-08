@@ -27,6 +27,10 @@
     background-color: var(--light-color);
 }
 
+.custom-bg-success {
+    background-color: var(--success-color);
+}
+
 .form-control.custom-focus:focus,
 .form-control.custom-focus:focus + .input-group-text {
     border-color: var(--secondary-color);
