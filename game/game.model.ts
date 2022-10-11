@@ -36,6 +36,26 @@ export default class Game {
         this.topic = topic;
     }
 
+    setImpostors(impostors : Player[]) {
+        if (impostors.length == 0) {
+            throw new Error("There are not enough impostors");
+        }
+
+        const arePlayers = impostors.every(impostor => {
+            return this.players.includes(impostor);
+        })
+
+        if (!arePlayers) {
+            throw new Error("Impostor needs to be a player of the game");
+        }
+
+        this.impostors = impostors;
+    }
+
+    nextRound() {
+        this.currentRound++;
+    }
+
     restart() {
         this.players = this.players.map((player) => {
             player.resetOportunities();
@@ -94,6 +114,7 @@ export default class Game {
                 existingPlayer.eliminate();
                 existingPlayer.resetOportunities();
                 existingPlayer.resetVotes();
+                this.latestEliminated = existingPlayer;
             }
 
             return existingPlayer;
