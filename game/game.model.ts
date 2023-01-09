@@ -117,6 +117,8 @@ export default class Game {
                 this.latestEliminated = existingPlayer;
             }
 
+            // TODO: add player to latestEliminated
+
             return existingPlayer;
         });
     }
